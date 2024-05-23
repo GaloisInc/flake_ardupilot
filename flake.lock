@@ -164,19 +164,6 @@
         "url": "https://crates.io/api/v1/crates/anyhow/1.0.43/download"
       }
     },
-    "ardupilot-patches": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-ViiV5YT/g1cHMmBCV8MeRpvAdHIFJaosHuAUVIY0RrQ=",
-        "path": "/nix/store/bpmw0wr70iha4bp8ijm8dhcmgidqz81x-source/patches",
-        "type": "path"
-      },
-      "original": {
-        "path": "/nix/store/bpmw0wr70iha4bp8ijm8dhcmgidqz81x-source/patches",
-        "type": "path"
-      }
-    },
     "ardupilot-src": {
       "flake": false,
       "locked": {
@@ -1657,7 +1644,6 @@
     "root": {
       "inputs": {
         "CANBUS": "CANBUS",
-        "ardupilot-patches": "ardupilot-patches",
         "ardupilot-src": "ardupilot-src",
         "dronecan_DSDL-src": "dronecan_DSDL-src",
         "dronecan_dsdlc-src": "dronecan_dsdlc-src",
