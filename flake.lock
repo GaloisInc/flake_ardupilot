@@ -1012,11 +1012,11 @@
         "z3_src_4_8_9": "z3_src_4_8_9"
       },
       "locked": {
-        "lastModified": 1716448496,
-        "narHash": "sha256-6KniUT15OUEzrrRlhKZgTcdMmmSQ+NCYo72sqqr92Z4=",
+        "lastModified": 1716506788,
+        "narHash": "sha256-ovuC0P9hqvhyhVyDI27/OTHKR8ZjeM6gTcqYJDsfgrk=",
         "owner": "GaloisInc",
         "repo": "flakes",
-        "rev": "1b23562079a1cd23100a2bb7a6f3d48a417d56c2",
+        "rev": "76edc31ea422063d159cb65d04d7060e8a496ae6",
         "type": "github"
       },
       "original": {
