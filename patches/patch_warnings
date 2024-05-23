@@ -1,0 +1,22 @@
+diff --git a/libraries/AP_Scripting/generator/src/main.c b/libraries/AP_Scripting/generator/src/main.c
+index da19db6778..fb40a949d7 100644
+--- a/libraries/AP_Scripting/generator/src/main.c
++++ b/libraries/AP_Scripting/generator/src/main.c
+@@ -1964,7 +1964,7 @@ void emit_userdata_method(const struct userdata *data, const struct method *meth
+   }
+ 
+   if (static_cast) {
+-    char *var_type_name;
++    char *var_type_name = "<undef-type>";
+     switch (method->return_type.type) {
+       case TYPE_BOOLEAN:
+         var_type_name = "bool";
+@@ -2155,7 +2155,7 @@ void emit_operators(struct userdata *data) {
+       continue;
+     }
+ 
+-    char op_sym;
++    char op_sym = '?';
+     switch ((data->operations) & i) {
+       case OP_ADD:
+         op_sym = '+';

@@ -1,0 +1,16 @@
+diff --git a/Tools/ardupilotwaf/boards.py b/Tools/ardupilotwaf/boards.py
+index 35f3ec24b8..860192b07c 100644
+--- a/Tools/ardupilotwaf/boards.py
++++ b/Tools/ardupilotwaf/boards.py
+@@ -517,8 +517,9 @@ class Board:
+             self.embed_ROMFS_files(bld)
+
+     def build(self, bld):
+-        bld.ap_version_append_str('GIT_VERSION', bld.git_head_hash(short=True))
+-        bld.ap_version_append_int('GIT_VERSION_INT', int("0x" + bld.git_head_hash(short=True), base=16))
++        if hasattr(bld, "git_head_hash"):
++            bld.ap_version_append_str('GIT_VERSION', bld.git_head_hash(short=True))
++            bld.ap_version_append_int('GIT_VERSION_INT', int("0x" + bld.git_head_hash(short=True), base=16))
+         bld.ap_version_append_str('AP_BUILD_ROOT', bld.srcnode.abspath())
+         import time
+         ltime = time.localtime()
